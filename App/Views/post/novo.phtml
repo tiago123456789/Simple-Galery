@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<title>Galery</title>
+</head>
+<body>
+	<header>
+	<nav class="navbar navbar-expand-sm bg-light navbar-light">
+		<a class="navbar-brand" href="/home">Galery</a>
+		<ul class="navbar-nav">
+			<li class="nav-item active">
+				<a class="nav-link" href="/upload">Upload</a>
+			</li>
+		</ul>
+	</nav>
+	</header>
+	<br/>
+	<div class="container">
+		<form action="/posts" method="post" enctype="multipart/form-data">
+			<div class="form-group">
+				<label>Describe:</label>
+				<textarea type="text" class="form-control" name="describe"></textarea>
+			</div>
+
+			<div class="form-group">
+				<input type="file" class="form-control" name="file" style="padding: 5px 5px 15px 5px;"/>
+			</div>
+			
+			<div class="form-group">
+				<input type="submit" class="btn btn-primary" value="Send" />
+			</div>
+		</form>	
+	</div>
+</body>
+</html>
+<br/>
+
+
