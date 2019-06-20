@@ -13,7 +13,9 @@ class Route extends Bootstrap
 		$routes["POST"]['upload'] = array('route'=>'/posts','controller'=>"postController",'action'=>'create');
 		$routes["GET"]['likes'] = array('route'=>'/posts/([0-9a-zA-Z])+/like', 'controller'=>"postController",'action'=>'like');
 		$routes["GET"]['disLikes'] = array('route'=>'/posts/([0-9a-zA-Z])+/dislike', 'controller'=>"postController",'action'=>'disLike');
+		$routes["GET"]['download'] = array('route'=>'/posts/([0-9a-zA-Z])+/download', 'controller'=>"postController",'action'=>'download');
 		
+		// /posts/id/download
 		$this->setRoutes($routes);
 	}
 

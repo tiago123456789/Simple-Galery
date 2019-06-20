@@ -45,4 +45,9 @@ class PostController extends Controller
 		Response::redirect("/home");
 	}
 
+	public function download($id) {
+		$imageDownload = $this->bo->download($id);
+		Response::download($imageDownload);
+	}
+
 }

@@ -13,4 +13,9 @@ class File {
         $pathImage = File::PATH_STORAGE_IMAGE . $file["name"];
 		move_uploaded_file($file["tmp_name"], $pathImage);
     }
+
+    static public function download($file) {
+        $pathImage = File::PATH_STORAGE_IMAGE . $file;
+        return readfile($pathImage);
+    }
 }

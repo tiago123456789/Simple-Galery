@@ -12,8 +12,16 @@ class PostBo {
         $this->dao = new PostDao();
     }
 
+    public function download($id) {
+        return $this->dao->download($id);
+    }
+
     public function create($newRegister) {
         $this->dao->create($newRegister);
+    }
+
+    public function findById($id) {
+        return $this->dao->findById($id);
     }
 
     public function findAll() {
